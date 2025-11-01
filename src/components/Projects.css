@@ -1,0 +1,144 @@
+.projects {
+  background: var(--bg-darker);
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 255, 135, 0.2);
+  border-radius: 25px;
+  color: var(--text-gray);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.filter-btn.active {
+  background: var(--gradient-2);
+  color: var(--bg-dark);
+  border-color: transparent;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 255, 135, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  border-color: var(--primary-color);
+  background: rgba(0, 255, 135, 0.05);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.project-header h3 {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  flex: 1;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-links a {
+  color: var(--text-gray);
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: var(--primary-color);
+}
+
+.project-description {
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-highlights {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.project-highlights li {
+  color: var(--text-gray);
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.project-highlights li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.tech-tag {
+  font-size: 0.85rem;
+  padding: 5px 12px;
+  background: rgba(0, 255, 135, 0.1);
+  color: var(--primary-color);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 135, 0.2);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-buttons {
+    gap: 10px;
+  }
+
+  .filter-btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}

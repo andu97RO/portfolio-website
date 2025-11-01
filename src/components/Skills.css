@@ -1,0 +1,137 @@
+.skills {
+  background: var(--bg-darker);
+}
+
+.skills-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 25px;
+  margin-bottom: 4rem;
+}
+
+.skill-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 255, 135, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  border-color: var(--primary-color);
+  background: rgba(0, 255, 135, 0.05);
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.skill-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.skill-category {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  background: rgba(0, 255, 135, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.skill-bar-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-bar {
+  height: 100%;
+  background: var(--gradient-2);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.skill-level {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--bg-dark);
+}
+
+.certifications {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 255, 135, 0.1);
+  border-radius: 12px;
+  padding: 40px;
+  margin-top: 3rem;
+}
+
+.certifications h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: var(--gradient-2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 135, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cert-item:hover {
+  border-color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.cert-badge {
+  font-size: 1.5rem;
+}
+
+.cert-item span:last-child {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .cert-list {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications {
+    padding: 30px 20px;
+  }
+
+  .certifications h3 {
+    font-size: 1.5rem;
+  }
+}
