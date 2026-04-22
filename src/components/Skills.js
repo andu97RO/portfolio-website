@@ -10,16 +10,20 @@ const Skills = () => {
   });
 
   const skills = [
-    { name: 'Test Automation', level: 95, category: 'QA' },
-    { name: 'Appium (Mobile)', level: 90, category: 'QA' },
-    { name: 'Cypress', level: 90, category: 'QA' },
-    { name: 'Java', level: 85, category: 'Programming' },
-    { name: 'JavaScript', level: 80, category: 'Programming' },
-    { name: 'CI/CD Integration', level: 85, category: 'DevOps' },
-    { name: 'API Testing', level: 85, category: 'QA' },
-    { name: 'Selenium', level: 80, category: 'QA' },
-    { name: 'Test Strategy', level: 90, category: 'QA' },
-    { name: 'Agile/Scrum', level: 85, category: 'Methodology' }
+    { name: 'Cursor AI', level: 90, category: 'AI' },
+    { name: 'Anthropic Claude', level: 88, category: 'AI' },
+    { name: 'Playwright', level: 92, category: 'QA' },
+    { name: 'Java', level: 86, category: 'Programming' },
+    { name: 'JavaScript', level: 84, category: 'Programming' },
+    { name: 'TypeScript', level: 82, category: 'Programming' },
+    { name: 'Selenium', level: 85, category: 'QA' },
+    { name: 'Cypress', level: 88, category: 'QA' },
+    { name: 'REST Assured', level: 83, category: 'API Testing' },
+    { name: 'Postman', level: 82, category: 'API Testing' },
+    { name: 'Jenkins', level: 85, category: 'CI/CD' },
+    { name: 'GitLab CI', level: 80, category: 'CI/CD' },
+    { name: 'Azure DevOps', level: 80, category: 'CI/CD' },
+    { name: 'CircleCI', level: 78, category: 'CI/CD' }
   ];
 
   const containerVariants = {
@@ -92,7 +96,7 @@ const Skills = () => {
           <div className="cert-list">
             <div className="cert-item">
               <span className="cert-badge">📱</span>
-              <span>Appium Mobile Automation Android & iOS + Framework + CI/CD</span>
+              <span>Appium Mobile Automation Android & IOS + Framework + CI/CD</span>
             </div>
             <div className="cert-item">
               <span className="cert-badge">🌐</span>
@@ -100,10 +104,6 @@ const Skills = () => {
             </div>
             <div className="cert-item">
               <span className="cert-badge">☕</span>
-              <span>Java 1 Associate</span>
-            </div>
-            <div className="cert-item">
-              <span className="cert-badge">💻</span>
               <span>European Computer Driving Licence</span>
             </div>
           </div>

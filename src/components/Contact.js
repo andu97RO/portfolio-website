@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaLinkedin, FaGithub, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaPhone } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -28,9 +28,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Form submission logic would go here
-    setFormStatus('Thank you for your message! I will get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormStatus('This form is currently disabled. Please email me directly.');
     setTimeout(() => setFormStatus(''), 5000);
   };
 
@@ -42,22 +40,28 @@ const Contact = () => {
       link: null
     },
     {
+      icon: <FaPhone />,
+      title: 'Phone',
+      value: '0749536968',
+      link: 'tel:0749536968'
+    },
+    {
       icon: <FaEnvelope />,
       title: 'Email',
-      value: 'andrei@example.com',
-      link: 'mailto:andrei@example.com'
+      value: 'bogdan.andrei450@gmail.com',
+      link: 'mailto:bogdan.andrei450@gmail.com'
     },
     {
       icon: <FaLinkedin />,
       title: 'LinkedIn',
-      value: 'andreipbogdan',
+      value: 'www.linkedin.com/in/andreipbogdan',
       link: 'https://www.linkedin.com/in/andreipbogdan/'
     },
     {
       icon: <FaGithub />,
       title: 'GitHub',
-      value: 'andreipbogdan',
-      link: 'https://github.com/andreipbogdan'
+      value: 'andu97RO',
+      link: 'https://github.com/andu97RO'
     }
   ];
 
@@ -101,8 +105,7 @@ const Contact = () => {
           <motion.div className="contact-info" variants={itemVariants}>
             <h3>Contact Information</h3>
             <p>
-              I'm always open to discussing new opportunities, collaborations,
-              or just chatting about quality assurance and test automation.
+              Always open to discussing QA Automation, quality strategy, or new opportunities.
             </p>
 
             <div className="info-items">
@@ -198,7 +201,7 @@ const Contact = () => {
 
         <motion.div className="footer" variants={itemVariants}>
           <p>Designed & Built by Andrei Bogdan</p>
-          <p>2024 - All Rights Reserved</p>
+          <p>2026 - All Rights Reserved</p>
         </motion.div>
       </motion.div>
     </section>

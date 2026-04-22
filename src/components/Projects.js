@@ -14,59 +14,100 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Mobile Test Automation Framework',
-      category: 'automation',
-      description: 'Comprehensive Appium-based framework for Android and iOS mobile app testing with CI/CD integration.',
-      technologies: ['Appium', 'Java', 'TestNG', 'Jenkins', 'CI/CD'],
+      title: 'portfolio-website',
+      category: 'all',
+      description: 'Personal portfolio website.',
+      technologies: ['JavaScript'],
       highlights: [
-        'Cross-platform mobile testing',
-        'Page Object Model architecture',
-        'Integrated with Jenkins pipeline',
-        'Detailed reporting with screenshots'
-      ]
+        'Public GitHub repository',
+        'Updated Jan 30, 2026',
+        'Stars: 0'
+      ],
+      repoUrl: 'https://github.com/andu97RO/portfolio-website',
+      liveUrl: 'https://portfolio-website-tawny-zeta-97.vercel.app'
     },
     {
-      title: 'Cypress E2E Testing Suite',
-      category: 'automation',
-      description: 'Modern web application testing framework with comprehensive coverage and real-time reporting.',
-      technologies: ['Cypress', 'JavaScript', 'Mocha', 'GitHub Actions'],
+      title: 'football-friends',
+      category: 'all',
+      description: 'GitHub repository.',
+      technologies: ['TypeScript'],
       highlights: [
-        'Fast, reliable test execution',
-        'Visual regression testing',
-        'API testing integration',
-        'Custom commands and utilities'
-      ]
+        'Public GitHub repository',
+        'Updated Jan 22, 2026',
+        'Stars: 0'
+      ],
+      repoUrl: 'https://github.com/andu97RO/football-friends',
+      liveUrl: ''
     },
     {
-      title: 'API Test Automation',
-      category: 'automation',
-      description: 'RESTful API testing framework with automated validation and performance testing capabilities.',
-      technologies: ['RestAssured', 'Java', 'Maven', 'Newman'],
+      title: 'solana-developers-program',
+      category: 'all',
+      description: 'GitHub repository.',
+      technologies: ['TypeScript'],
       highlights: [
-        'Comprehensive API coverage',
-        'Schema validation',
-        'Performance benchmarking',
-        'Automated contract testing'
-      ]
+        'Public GitHub repository',
+        'Updated Oct 25, 2024',
+        'Stars: 0'
+      ],
+      repoUrl: 'https://github.com/andu97RO/solana-developers-program',
+      liveUrl: ''
     },
     {
-      title: 'Quality Metrics Dashboard',
-      category: 'tools',
-      description: 'Real-time dashboard for tracking QA metrics, test coverage, and defect trends.',
-      technologies: ['React', 'D3.js', 'Node.js', 'MongoDB'],
+      title: 'automation-qteam-task',
+      category: 'all',
+      description: 'GitHub repository.',
+      technologies: ['JavaScript'],
       highlights: [
-        'Real-time metrics visualization',
-        'Customizable reports',
-        'Integration with test tools',
-        'Trend analysis and insights'
-      ]
+        'Public GitHub repository',
+        'Updated Feb 1, 2024',
+        'Stars: 0'
+      ],
+      repoUrl: 'https://github.com/andu97RO/automation-qteam-task',
+      liveUrl: ''
+    },
+    {
+      title: 'E2EProject',
+      category: 'all',
+      description: 'GitHub repository.',
+      technologies: ['Java'],
+      highlights: [
+        'Public GitHub repository',
+        'Updated Sep 22, 2021',
+        'Stars: 0'
+      ],
+      repoUrl: 'https://github.com/andu97RO/E2EProject',
+      liveUrl: ''
+    },
+    {
+      title: 'seleniumPython',
+      category: 'all',
+      description: 'GitHub repository.',
+      technologies: ['Python'],
+      highlights: [
+        'Public GitHub repository',
+        'Updated Oct 17, 2020',
+        'Stars: 0'
+      ],
+      repoUrl: 'https://github.com/andu97RO/seleniumPython',
+      liveUrl: ''
+    },
+    {
+      title: 'licenta-facultate',
+      category: 'all',
+      description: 'GitHub repository.',
+      technologies: ['HTML'],
+      highlights: [
+        'Public GitHub repository',
+        'Updated Jun 30, 2020',
+        'Stars: 0'
+      ],
+      repoUrl: 'https://github.com/andu97RO/licenta-facultate',
+      liveUrl: ''
     }
   ];
 
   const categories = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'automation', label: 'Test Automation' },
-    { id: 'tools', label: 'QA Tools' }
+    { id: 'all', label: 'All Repositories' }
   ];
 
   const filteredProjects = filter === 'all'
@@ -107,10 +148,10 @@ const Projects = () => {
         animate={inView ? "visible" : "hidden"}
       >
         <motion.div className="section-header" variants={itemVariants}>
-          <h2 className="section-title">Featured Projects</h2>
+          <h2 className="section-title">GitHub Repositories</h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">
-            Showcasing my expertise in test automation and quality assurance
+            A selection of my public repositories
           </p>
         </motion.div>
 
@@ -151,19 +192,25 @@ const Projects = () => {
                   <h3>{project.title}</h3>
                   <div className="project-links">
                     <motion.a
-                      href="#projects"
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       whileHover={{ scale: 1.2 }}
                       whileTap={{ scale: 0.9 }}
                     >
                       <FaGithub />
                     </motion.a>
-                    <motion.a
-                      href="#projects"
-                      whileHover={{ scale: 1.2 }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <FaExternalLinkAlt />
-                    </motion.a>
+                    {project.liveUrl && (
+                      <motion.a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        <FaExternalLinkAlt />
+                      </motion.a>
+                    )}
                   </div>
                 </div>
 

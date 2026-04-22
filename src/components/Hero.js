@@ -45,11 +45,11 @@ const Hero = () => {
         </motion.h1>
 
         <motion.div className="typing-container" variants={itemVariants}>
-          <h2 className="title">QA Engineer & Test Automation Specialist</h2>
+          <h2 className="title">Senior QA Automation Engineer</h2>
         </motion.div>
 
         <motion.p className="tagline" variants={itemVariants}>
-          On a mission to ensure software excellence through cutting-edge testing solutions
+          QA Automation Engineer with 6 years' experience building scalable, CI-friendly automation for web and API applications
         </motion.p>
 
         <motion.div className="cta-buttons" variants={itemVariants}>
@@ -73,7 +73,7 @@ const Hero = () => {
 
         <motion.div className="social-links" variants={itemVariants}>
           <motion.a
-            href="https://github.com/andreipbogdan"
+            href="https://github.com/andu97RO"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2, rotate: 5 }}

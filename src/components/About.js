@@ -32,23 +32,23 @@ const About = () => {
   const highlights = [
     {
       icon: <FaRocket />,
-      title: 'Quality-Driven',
-      description: 'Passionate about delivering exceptional software quality through comprehensive testing strategies'
+      title: 'AI Tools',
+      description: 'Claude Code, Cursor'
     },
     {
       icon: <FaCode />,
-      title: 'Automation Expert',
-      description: 'Skilled in Appium, Cypress, and modern test automation frameworks'
+      title: 'Languages',
+      description: 'Java, JavaScript, TypeScript'
     },
     {
       icon: <FaUsers />,
-      title: 'Team Player',
-      description: 'Active volunteer and contributor to tech communities'
+      title: 'Test Automation',
+      description: 'Playwright, Selenium, Cypress'
     },
     {
       icon: <FaLightbulb />,
-      title: 'Innovation Focused',
-      description: 'Staying ahead with AI in testing and cutting-edge QA practices'
+      title: 'CI/CD + Strategy',
+      description: 'Jenkins, GitLab CI, Azure DevOps, CircleCI, test strategy'
     }
   ];
 
@@ -69,19 +69,20 @@ const About = () => {
         <motion.div className="about-content" variants={itemVariants}>
           <div className="about-text">
             <p className="lead">
-              I'm a dedicated QA Engineer based in Bucharest, Romania, currently working at Lucanet.
-              With a strong foundation from University POLITEHNICA of Bucharest, I specialize in ensuring
-              software excellence through innovative testing solutions.
+              I'm a QA Automation Engineer with 6 years of hands-on experience designing and scaling
+              robust test automation frameworks for web and API applications. Based in Bucharest, Romania,
+              I focus on building reliable, maintainable, and CI-friendly automation solutions that help
+              teams ship faster without sacrificing quality.
             </p>
             <p>
-              My expertise spans mobile automation (Appium), modern web testing (Cypress), and building
-              robust test frameworks integrated with CI/CD pipelines. I'm passionate about leveraging
-              AI and cutting-edge technologies to revolutionize the testing landscape.
+              I design scalable automation frameworks from scratch or refactor legacy ones, integrate
+              automated tests into CI/CD pipelines, and improve test reliability, execution time, and
+              maintainability. I advocate for best practices in test automation and quality engineering.
             </p>
             <p>
-              Beyond my professional work, I'm an active member of the tech community, having volunteered
-              with the Electronics Students League and continuously engaging with the latest developments
-              in quality assurance and test automation.
+              I work closely with developers, product owners, and DevOps teams to ensure clear
+              communication, shared ownership of quality, and continuous improvement. Always open to
+              discussing QA Automation, quality strategy, or new opportunities.
             </p>
           </div>
         </motion.div>
