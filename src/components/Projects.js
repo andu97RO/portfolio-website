@@ -14,14 +14,25 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'AppPulse',
+      category: 'all',
+      description: 'macOS app update monitor — checks installed apps against Homebrew Cask and GitHub Releases.',
+      technologies: ['HTML'],
+      highlights: [
+        'Public GitHub repository',
+        'Updated Apr 22, 2026'
+      ],
+      repoUrl: 'https://github.com/andu97RO/AppPulse',
+      liveUrl: ''
+    },
+    {
       title: 'portfolio-website',
       category: 'all',
-      description: 'Personal portfolio website.',
+      description: 'Personal portfolio website built with React.',
       technologies: ['JavaScript'],
       highlights: [
         'Public GitHub repository',
-        'Updated Jan 30, 2026',
-        'Stars: 0'
+        'Updated Apr 22, 2026'
       ],
       repoUrl: 'https://github.com/andu97RO/portfolio-website',
       liveUrl: 'https://portfolio-website-tawny-zeta-97.vercel.app'
@@ -29,12 +40,11 @@ const Projects = () => {
     {
       title: 'football-friends',
       category: 'all',
-      description: 'GitHub repository.',
+      description: 'TypeScript project.',
       technologies: ['TypeScript'],
       highlights: [
         'Public GitHub repository',
-        'Updated Jan 22, 2026',
-        'Stars: 0'
+        'Updated Jan 22, 2026'
       ],
       repoUrl: 'https://github.com/andu97RO/football-friends',
       liveUrl: ''
@@ -42,64 +52,23 @@ const Projects = () => {
     {
       title: 'solana-developers-program',
       category: 'all',
-      description: 'GitHub repository.',
+      description: 'Solana developer program exercises and projects.',
       technologies: ['TypeScript'],
       highlights: [
         'Public GitHub repository',
-        'Updated Oct 25, 2024',
-        'Stars: 0'
+        'Updated Oct 25, 2024'
       ],
       repoUrl: 'https://github.com/andu97RO/solana-developers-program',
       liveUrl: ''
     },
     {
-      title: 'automation-qteam-task',
-      category: 'all',
-      description: 'GitHub repository.',
-      technologies: ['JavaScript'],
-      highlights: [
-        'Public GitHub repository',
-        'Updated Feb 1, 2024',
-        'Stars: 0'
-      ],
-      repoUrl: 'https://github.com/andu97RO/automation-qteam-task',
-      liveUrl: ''
-    },
-    {
-      title: 'E2EProject',
-      category: 'all',
-      description: 'GitHub repository.',
-      technologies: ['Java'],
-      highlights: [
-        'Public GitHub repository',
-        'Updated Sep 22, 2021',
-        'Stars: 0'
-      ],
-      repoUrl: 'https://github.com/andu97RO/E2EProject',
-      liveUrl: ''
-    },
-    {
-      title: 'seleniumPython',
-      category: 'all',
-      description: 'GitHub repository.',
-      technologies: ['Python'],
-      highlights: [
-        'Public GitHub repository',
-        'Updated Oct 17, 2020',
-        'Stars: 0'
-      ],
-      repoUrl: 'https://github.com/andu97RO/seleniumPython',
-      liveUrl: ''
-    },
-    {
       title: 'licenta-facultate',
       category: 'all',
-      description: 'GitHub repository.',
+      description: 'Bachelor\'s degree thesis project.',
       technologies: ['HTML'],
       highlights: [
         'Public GitHub repository',
-        'Updated Jun 30, 2020',
-        'Stars: 0'
+        'Updated Jun 30, 2020'
       ],
       repoUrl: 'https://github.com/andu97RO/licenta-facultate',
       liveUrl: ''
